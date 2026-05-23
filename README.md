@@ -1,4 +1,6 @@
+⚠️ Repository Note: This is an architectural mirror of the [Calcutta_Hacks] project. The original deployment repository is hosted [https://github.com/Jontybr18211/Project-Kishan-Kolkata-Hacks].
 
+I served as the core ML/Backend Engineer for this project, building the Google Earth Engine data pipelines, the FAISS vector database integration, and the local RAG architecture. I am hosting this mirror to showcase the backend systems I developed locally during the event.
 ---
 
 # 🌱 Project Kishan: AI Agronomist for India 🇮🇳
