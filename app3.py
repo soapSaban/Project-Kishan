@@ -719,6 +719,7 @@ class ProjectKishan:
                 features['rainfall'] = 5.0
             
             # Set lag features (using current values as approximation)
+            # TODO: Refactor lag feature generation... Need to implement async GEE batch exports for actual historical lags.
             features['NDVI_lag_1'] = features['NDVI'] * 0.95
             features['NDVI_lag_2'] = features['NDVI'] * 0.90
             features['NDVI_lag_3'] = features['NDVI'] * 0.85
