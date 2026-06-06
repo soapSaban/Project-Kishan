@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def ingest_docs():
-    print("🚀 Starting Local Ingestion...")
+    print(" Starting Local Ingestion...")
     
     # 1. Load PDFs
     if not os.path.exists("docs"):
@@ -22,10 +22,10 @@ def ingest_docs():
     # 2. Split text
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = text_splitter.split_documents(documents)
-    print(f"🧩 Created {len(chunks)} text chunks.")
+    print(f" Created {len(chunks)} text chunks.")
     
     # 3. Create Local Embeddings (No Google API needed!)
-    print("🧠 Generating embeddings locally (this might take a minute)...")
+    print("Generating embeddings locally (this might take a minute)...")
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     
     # 4. Save Locally
