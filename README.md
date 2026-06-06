@@ -13,20 +13,20 @@ I served as the core ML/Backend Engineer for this project, building the Google E
 
 It integrates real-time satellite telemetry (Sentinel-2, NASA SMAP) with a Hybrid Machine Learning engine to predict crop yields and provide personalized agronomic advice in **Hindi, Bengali, and English**.
 
-## ✨ Key Features
+##  Key Features
 
-### 🛰️ 1. Space-to-Farm Intelligence
+### 1. Space-to-Farm Intelligence
 
 * **Real-time Satellite Analysis:** Fetches live NDVI (Vegetation Health), NDWI (Water Stress), and Soil Moisture data using the **Google Earth Engine (GEE) API**.
 * **Precision Weather:** Hyper-local 7-day forecasts using OpenWeatherMap.
 
-### 🧠 2. Hybrid AI Engine
+### 2. Hybrid AI Engine
 
 * **Yield Prediction:** A Random Forest Regressor trained on historical agricultural data.
 * **Biological Logic Layer:** A custom expert system (`agronomy_config.py`) that cross-references ML predictions with FAO biological constraints to prevent unrealistic "hallucinations."
 * **RAG Chatbot:** Context-aware chat powered by **Google Gemini**, grounded in live farm data.
 
-### 🗣️ 3. Radical Accessibility
+### 3. Radical Accessibility
 
 * **Trilingual Support:** Full UI and AI responses in **English, Hindi, and Bengali**.
 * **Voice Assistant:** Farmers can speak their query and hear the response (STT/TTS integration).
@@ -34,7 +34,7 @@ It integrates real-time satellite telemetry (Sentinel-2, NASA SMAP) with a Hybri
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 1. **Frontend:** Streamlit (Web App) / WhatsApp (Mobile Interface).
 2. **Orchestrator:** Python (Logic Layer).
@@ -53,7 +53,7 @@ It integrates real-time satellite telemetry (Sentinel-2, NASA SMAP) with a Hybri
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -114,7 +114,7 @@ ngrok http 5000
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 project-kishan/
@@ -130,7 +130,7 @@ project-kishan/
 
 ```
 
-## 📸 Screenshots
+##Screenshots
 
 | Interactive Map | Multilingual Chat | Yield Analysis |
 | --- | --- | --- |
@@ -139,7 +139,7 @@ project-kishan/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Core:** Python, Pandas, NumPy.
 * **ML & AI:** Scikit-Learn, Google Gemini (GenAI), SpeechRecognition, gTTS.
@@ -149,14 +149,14 @@ project-kishan/
 
 ---
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
 * [ ] **Offline Mode:** SMS-based alerts for farmers without data.
 * [ ] **Marketplace:** Connect farmers directly to buyers based on predicted harvest dates.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repo and submit a Pull Request.
 
