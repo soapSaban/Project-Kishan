@@ -7,7 +7,7 @@ I served as the core ML/Backend Engineer for this project, building the Google E
 
 > **Bridging the gap between Satellite Intelligence and Rural Farmers using Generative AI.**
 
-## 📖 Overview
+## Overview
 
 **Project Kishan** is a multimodal, multilingual AI platform designed to help Indian farmers make data-driven decisions. Unlike traditional dashboards that require literacy and technical knowledge, Kishan uses a **Voice-First** and **WhatsApp-First** approach.
 
