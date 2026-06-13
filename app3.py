@@ -853,8 +853,7 @@ class ProjectKishan:
         - Total Precipitation: {analysis_data['total_precipitation']:.1f}mm
         - Average Humidity: {analysis_data['avg_humidity']:.1f}%
         
-        MACHINE LEARNING PREDICTIONS:
-        - Predicted Yield: {analysis_data['predicted_yield']:.1f} units/hectare
+        
         
         KEY INSIGHTS:
         - Current vegetation health is {'excellent' if analysis_data['ndvi'] > 0.6 else 'good' if analysis_data['ndvi'] > 0.3 else 'concerning'}
