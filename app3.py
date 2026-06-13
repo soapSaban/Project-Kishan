@@ -868,22 +868,16 @@ class ProjectKishan:
         if not self.api_status['gemini']:
             return "AI service is currently unavailable."
 
-        # --- 1. RAG RETRIEVAL (The Missing Link) ---
-        rag_context = ""
+       # --- 1. RAG RETRIEVAL (The Missing Link) ---
+        rag_context = "No knowledge base context available."
         sources_used = []
         
         if self.api_status['rag']:
-            try:
-                # Search for 3 relevant chunks from your PDF database
-                docs = self.vector_store.similarity_search(user_prompt, k=3)
-                for doc in docs:
-                    rag_context += f"- {doc.page_content}\n"
-                    # Capture the source filename for citation
-                    source = doc.metadata.get('source', 'Unknown File')
-                    if source not in sources_used:
-                        sources_used.append(source)
-            except Exception as e:
-                print(f"RAG Error: {e}")
+            # Call your modular function instead of rewriting the loop
+            rag_context, sources_used = self.get_grounded_context(user_prompt)
+            
+            # Fallback if the search returned nothing
+            if not rag_context:
                 rag_context = "No knowledge base context available."
         
         # --- 2. PROMPT CONSTRUCTION ---
